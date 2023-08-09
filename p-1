@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  cout<<"Vediya khushi R."<<endl;
+  cout<<"220130318010"<<endl;
+}
