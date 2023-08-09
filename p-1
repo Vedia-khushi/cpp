@@ -1,8 +1,14 @@
+Practical list-1
+
+1. Write minimum 5 programs using cin and cout.
+
 #include<iostream>
 using namespace std;
 int main()
 {
   cout<<"Vediya khushi R."<<endl;
   cout<<"220130318010"<<endl;
+
+  int num1,num2;
 }
 
