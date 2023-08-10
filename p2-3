@@ -1,0 +1,48 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+class student
+{
+	private:
+			string name;
+			long long p_no;
+			long long  er_no;
+	public:
+			void getdata();
+			void print();
+};
+void student::getdata()
+{
+	cout<<"Enter your good name :: ";
+	cin>>name;
+	cout<<"Enter your phone_no :: ";
+	cin>>p_no;
+	cout<<"Enter your er_no :: ";
+	cin>>er_no;
+}
+void student ::print()
+{
+	cout<<"Your good name is ::"<<name<<endl;
+	cout<<"Your phone_no ::"<<p_no<<endl;
+	cout<<"Your er_no is :: "<<er_no<<endl;
+}
+int main()
+	{
+	student s1,s2,s3;
+	
+	s1.getdata();
+	s1.print();
+	
+	s2.getdata();
+	s2.print();
+	
+	s3.getdata();
+	s3.print();
+	
+	return 0;
+}
+	
+	
+	
