@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int k=20;
+
+int main()
+{
+	int k=25;
+	
+	cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"The local variable is ::"<<k<<endl;
+	cout<<"The global variable is ::"<<::k<<endl;
+	
+	return 0;
+}
