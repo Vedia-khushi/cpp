@@ -1,0 +1,24 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int num1,num2,temp;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter the number1 :: ";
+	cin>>num1;
+	cout<<"Enter the number2 :: ";
+	cin>>num2;
+	
+	cout<<"Before swapping the :: "<<num1<<"&"<<num2<<endl;
+	
+	temp=num1;
+	num1=num2;
+	num2=temp;
+	cout<<"After swapping the :: "<<num1<<"&"<<num2<<endl;
+	return 0; 
+}
