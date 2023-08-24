@@ -1,1 +1,27 @@
+#include<iostream>
 
+using namespace std;
+
+int main()
+{
+	int num;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter the number:: ";
+	cin>>num;
+	
+	if(num%2==0)
+	{
+		cout<<"Given number is Even ";
+	}
+	else
+	{
+		cout<<"Given number is odd  ";
+	}
+	
+	
+	
+	return 0; 
+}
