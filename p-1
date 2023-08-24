@@ -19,3 +19,74 @@ int main()
 
 }
 
+2.Write a C program to enter two numbers and perform all arithmetic 
+operations.
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int num1,num2;
+	
+	cout<<"Vediya Khushi R.";
+	cout<<"220130318010"
+	
+	cout<<"Enter the number1 :: ";
+	cin>>num1;
+	cout<<"Enter the number2 :: ";
+	cin>>num2;
+	
+	cout<<"sum :: "<<num1+num2<<endl;
+	cout<<"sub :: "<<num1-num2<<endl;
+	cout<<"mul :: "<<num1*num2<<endl;
+	cout<<"div :: "<<num1/num2<<endl;
+	cout<<"mod :: "<<num1%num2<<endl;
+	return 0; 
+}
+
+3.Write a C program to enter length and breadth of a rectangle and find 
+its perimeter & area.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int l,b;
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter the length :: "<<endl;
+	cin>>l;
+	cout<<"Enter the breadth :: "<<endl;
+	cin>>b;
+	
+	cout<<"perimeter is :: "<<2*(l+b)<<endl;
+	cout<<"breadth is :: "<<l*b<<endl;
+	
+	return 0;
+}
+
+4. Write a C program to enter radius of a circle and find its diameter, 
+circumference and area
+
+#include<iostream>
+#define pi 3.14
+using namespace std;
+int main()
+{
+	int r;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter the radius :: "<<endl;
+	cin>>r;
+	
+	cout<<"The diameter is :: "<<2*r<<endl;
+	cout<<"The circumferance is :: "<<2*pi*r<<endl;
+	cout<<"The Area is :: "<<pi*r*r<<endl;
+	return 0;
+}
+
