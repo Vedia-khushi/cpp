@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+int sum(int);
+
+int main()
+{
+	int n;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter the number to find sum : "<<endl;
+	cin>>n;
+	
+	int calsum=sum(n);
+	
+	cout<<"The sum is :"<<calsum;
+	
+	return 0;
+	
+}
+int sum(int n)
+{
+	if(n==0)
+	return 0;
+	else
+	return sum(n-1)+n;
+}
