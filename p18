@@ -1,0 +1,29 @@
+
+18. Write C++ Program to Calculate the Power of a Number using function.
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int pow(int base,int power)
+{
+    int result;
+       result = pow(base,power);
+       
+       return result;
+
+}
+int main()
+{
+  int base,power,res;
+  
+    cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+
+  cout<<"Enter the Base::";
+  cin>>base;
+  cout<<"Enter the Power";
+  cin>>power;
+     res=pow(base,power);
+     cout<<"Power is::::"<<res;
+   return 0; 
+}
