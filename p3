@@ -1,0 +1,44 @@
+/*Write a C++ program to declare structure of Employee with data 
+members like emp_name, emp_code, emp_salary, emp_branch and 
+also display contents values of member variables */ 
+
+#include<iostream>
+
+using namespace std;
+
+struct employee
+{
+	int emp_code;
+	string emp_name;
+	string emp_branch;
+	int emp_salary;
+};
+int main()
+{
+	
+	struct employee e1;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter your good name ::  ";
+	cin>>e1.emp_name;
+	
+	cout<<"Enter your branch :: ";
+	cin>>e1.emp_branch;
+	
+	cout<<"Enter your code :: ";
+	cin>>e1.emp_code;
+	
+	
+	cout<<"Enter your salary :: ";
+	cin>>e1.emp_salary;
+	
+	cout<<"Your Name is  :: "<<e1.emp_name<<endl;
+	cout<<"Your branch is :: "<<e1.emp_branch<<endl;
+	cout<<"Your code is :: "<<e1.emp_code<<endl;
+	cout<<"Your salary is :: "<<e1.emp_salary<<endl;
+	
+	return 0;
+		
+}
