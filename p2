@@ -1,0 +1,23 @@
+//Find out output of below program//
+
+#include<iostream>
+
+using namespace std;
+
+struct student
+{
+	char a;
+	float c;
+	char b;
+	
+};
+int main()
+{
+	
+	cout<<"Vediya Khushi R. "<<endl;
+	cout<<"220130318010 "<<endl;
+	
+	cout<<sizeof(student);
+	
+	return 0;
+}
