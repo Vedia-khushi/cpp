@@ -1,0 +1,39 @@
+/*Write a C++ program that declares student structure with data 
+members name, std, percentage. Take value for these data members 
+and display it. */
+
+#include<iostream>
+
+using namespace std;
+
+struct student
+{
+	int std;
+	float per;
+	string name;
+};
+
+int main()
+{
+
+	struct student s1;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	cout<<"Enter your good name ::  ";
+	cin>>s1.name;
+	
+	cout<<"Enter your standard ::   ";
+	cin>>s1.std;
+	
+	cout<<"Enter your percentage :: ";
+	cin>>s1.per;
+	
+	cout<<"Your good name is :: "<<s1.name<<endl;
+	cout<<"Your standard is :: "<<s1.std<<endl;
+	cout<<"Your percentage is :: "<<s1.per<<"%"<<endl;
+	
+	return 0;
+	
+}
