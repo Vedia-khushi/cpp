@@ -1,0 +1,58 @@
+/*Write a C++ program to create class Max with data member’s num_1 
+and num_2. Member function are input(), display(), largest(). 
+(* Nesting of member functions: A member function can be 
+called by using its name inside another member function of the 
+same class. This is known as nesting of member function.)*/ 
+
+#include <iostream>
+
+using namespace std;
+
+class Max {
+private:
+    int num_1;
+    int num_2;
+
+public:
+    void input() 
+	{
+        cout << "Enter the first number: ";
+        cin >> num_1;
+        cout << "Enter the second number: ";
+        cin >> num_2;
+    }
+
+    void display()
+	 {
+        cout << "First number: " << num_1 << std::endl;
+        cout << "Second number: " << num_2 << std::endl;
+    }
+
+    void largest()
+	 {
+     if (num_1 > num_2)
+		  {
+            cout << num_1 << " is the largest." << std::endl;
+      }
+    else if (num_2 > num_1) 
+		  {
+            cout << num_2 << " is the largest." << std::endl;
+      } 
+    else
+		  {
+            cout << "Both numbers are equal." << std::endl;
+      }
+    }
+};
+
+int main() 
+{
+    Max m1;
+    
+    
+  m1.input();
+	m1.display();
+	m1.largest();
+
+    return 0;
+}
