@@ -48,11 +48,14 @@ public:
 int main() 
 {
     Max m1;
+
+    cout<<"Vediya Khushi R."<<endl;
+    cout<<"220130318010"<<endl;
     
     
   m1.input();
-	m1.display();
-	m1.largest();
+m1.display();
+m1.largest();
 
     return 0;
 }
