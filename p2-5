@@ -1,0 +1,12 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+	
+	cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+    float pi = 3.14234;
+    cout << " area of cricle is ::" << setprecision(3) << pi;
+    return 0;
+}
