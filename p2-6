@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	
+	cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+    int no1 = 12345;
+    cout << "using value of a is ::" << setw(6) << setfill('*') << no1;
+
+    return 0;
+}
