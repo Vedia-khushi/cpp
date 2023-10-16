@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+ inline int squar(int num)
+{
+    int sqr;
+    sqr=num*num;
+    cout<<"square of given number is::"<<sqr;
+}
+int main()
+{
+    int number;
+    
+    cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+    
+
+    cout<<"Enter the number ::";
+    cin>>number;
+    squar(number);
+    
+return 0;
+}
