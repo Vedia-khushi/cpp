@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+ enum day{Monday,Tuesday,Wednesday,Thuresday,Friday,Satuarday,Sunday};
+int main()
+{
+    day today=Wednesday;
+    
+    cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+    
+        switch (today)
+		 {
+        case Sunday:
+            cout << "It's Sunday!" << std::endl;
+            break;
+        case Monday:
+            cout << "It's Monday!" << std::endl;
+            break;
+        case Wednesday:
+         cout << "It's Wednesday!" << std::endl;
+            break;
+        // ... and so on for other days
+        default:
+            cout << "It's not a special day." << std::endl;
+    }
+
+return 0;
+}
