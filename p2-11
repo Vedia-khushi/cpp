@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int num;
+int& test();
+
+int main() {
+
+   test() = 10;
+
+  cout <<"Return by Reference Value is ::"<<num;
+
+  return 0;
+}
+int& test()
+ {
+ 	
+ 	cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+  return num;
+}
