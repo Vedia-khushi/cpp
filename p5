@@ -1,0 +1,36 @@
+#include<iostream>
+
+
+using namespace std;
+
+class sample
+{
+	public:
+			int a;
+			
+			void getdata()
+			{
+				cout<<"Enter the value of a :: ";
+				cin>>a;
+			}
+};
+
+sample add(sample &s)
+{
+	s.getdata();
+	cout<<"Old value is ::"<<s.a<<endl<<endl;
+	s.a=s.a+5;
+	cout<<"New value is :: "<<s.a<<endl<<endl;
+	return s;
+}
+int  main()
+{
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;a
+	sample s1;
+	
+	sample ans=add(s1);
+	
+	return 0;
+}
