@@ -1,0 +1,17 @@
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int a = 2982006;
+    
+    cout<<"Vediya khushi R."<<endl;
+    cout<<"220130318010"<<endl;
+    cout << " The value of a is ::" <<a<< endl;// use of endline 
+    cout << "using setw value of a is ::" << setw(8) << setfill('0') << a;
+    // use of SEW 
+    return 0;
+}
