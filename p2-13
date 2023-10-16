@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int test(const int z)
+{
+	return z;
+}
+
+int main()
+{
+	
+	cout<<"Vediya khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+    
+	cout<<"Enter value of Z ::"<<test(5)<<endl;
+	return 0;
+}
