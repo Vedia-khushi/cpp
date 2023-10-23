@@ -1,0 +1,89 @@
+/*Write a C++ program to demonstrate use of Multilevel Inheritance*/
+
+#include<iostream>
+
+using namespace std;
+
+class details
+{
+	int age;
+	string name;
+	
+	public:
+			void getdata()
+			{
+				cout<<"Enter your age :: ";
+				cin>>age;
+				
+				cout<<"Enter your name :: ";
+				cin>>name;
+			}
+			
+			void display()
+			{
+				cout<<"your name is :: "<<name<<endl;
+				cout<<"Your age is :: "<<age<<endl;
+			}
+};
+
+class stud : public details
+{
+	long long er_no;
+	string email;
+	
+	public:
+		
+			void get()
+			{
+				cout<<"Enter your er no :: ";
+				cin>>er_no;
+				cout<<"Enter your email";
+				cin>>email;
+			}
+			
+			void print()
+			{
+				cout<<"Your Enrollment number is :: "<<er_no<<endl;
+				cout<<"Your Email id is :: "<<email<<endl;
+			}
+		
+};
+
+class marks : public stud
+{
+	float sgpa1;
+	float sgpa2;
+	
+	public:
+		
+	void getres()
+	{
+		cout<<"Enter Your sem1 sgpa :: ";
+		cin>>sgpa1;
+		cout<<"Enter your sem2 sgpa :: ";
+		cin>>sgpa2;
+	}
+	void printres()
+	{
+		cout<<"Yur sem1 sgpa is :: "<<sgpa1<<endl;
+		cout<<"Your sem2 sgpa is :: "<<sgpa2<<endl;
+	}
+};
+int main()
+
+{
+	marks m1;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	m1.getdata();
+	m1.get();
+	m1.getres();
+	m1.display();
+	m1.print();
+	m1.printres();
+	
+	return 0;
+}
+
