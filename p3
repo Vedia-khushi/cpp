@@ -1,0 +1,92 @@
+/*Write a C++ program to demonstrate use of Multiple Inheritance*/
+
+#include<iostream>
+
+using namespace std;
+
+class details
+{
+	int age;
+	string name;
+	
+	public:
+			void getdata()
+			{
+				cout<<"Enter your age :: ";
+				cin>>age;
+				
+				cout<<"Enter your name :: ";
+				cin>>name;
+			}
+			
+			void display()
+			{
+				cout<<"your name is :: "<<name<<endl;
+				cout<<"Your age is :: "<<age<<endl;
+			}
+};
+
+class stud : public details
+{
+	long long er_no;
+	string email;
+	
+	public:
+		
+			void get()
+			{
+				cout<<"Enter your er no :: ";
+				cin>>er_no;
+				cout<<"Enter your email";
+				cin>>email;
+			}
+			
+			void print()
+			{
+				cout<<"Your Enrollment number is :: "<<er_no<<endl;
+				cout<<"Your Email id is :: "<<email<<endl;
+			}
+		
+};
+
+class employee : public details
+{
+	string id;
+	float salary;
+	
+	public:
+		
+	void get_info()
+	{
+		cout<<"Enter Your i'd :: ";
+		cin>>id;
+		cout<<"Enter your salary :: ";
+		cin>>salary;
+	}
+	void print_info()
+	{
+		cout<<"Your i''d is :: "<<id<<endl;
+		cout<<"Your salary is :: "<<salary<<endl;
+	}
+};
+int main()
+
+{
+	employee e1;
+	stud s1;
+	
+	cout<<"Vediya Khushi R."<<endl;
+	cout<<"220130318010"<<endl;
+	
+	s1.getdata();
+	s1.get();
+	s1.display();
+	s1.print();
+	
+	e1.getdata();
+	e1.get_info();
+	e1.display();
+	e1.print_info();
+	
+	return 0;
+}
