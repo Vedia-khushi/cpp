@@ -1,0 +1,65 @@
+/*Write a C++ program to demonstrate use of Single Inheritance*/
+
+#include<iostream>
+
+using namespace std;
+
+class details
+{
+	int age;
+	string name;
+	
+	public:
+			void getdata()
+			{
+				cout<<"Enter your age :: ";
+				cin>>age;
+				
+				cout<<"Enter your name :: ";
+				cin>>name;
+			}
+			
+			void display()
+			{
+				cout<<"your name is :: "<<name<<endl;
+				cout<<"Your age is :: "<<age<<endl;
+			}
+};
+
+class stud : public details
+{
+	long long er_no;
+	string email;
+	
+	public:
+		
+			void get()
+			{
+				cout<<"Enter your er no :: ";
+				cin>>er_no;
+				cout<<"Enter your email";
+				cin>>email;
+			}
+			
+			void print()
+			{
+				cout<<"Your Enrollment number is :: "<<er_no<<endl;
+				cout<<"Your Email id is :: "<<email<<endl;
+			}
+		
+};
+
+int main()
+{
+	stud s1;
+	
+	cout<<"Vediya Khushi R.";
+	cout<<"220130318010";
+	
+	s1.getdata();
+	s1.display();
+	s1.get();
+	s1.print();
+	
+	return 0;
+}
