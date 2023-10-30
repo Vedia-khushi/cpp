@@ -1,0 +1,39 @@
+//5.Write a C++ program to demonstrate use of this pointer.//
+
+#include<iostream>
+
+using namespace std;
+
+class test 
+{
+	int mark;
+	float spi;
+	
+	public:
+		
+		void getdata()
+		{
+			this->mark=70;
+			this->spi=6.5;
+		}
+		void displaydata()
+		{
+			cout<<"Mark = "<<mark<<endl;
+			cout<<"SPI = "<<spi<<endl;
+		}
+};
+
+int main()
+{
+
+test t1;
+
+cout<<"220130318010"<<endl;
+cout<<"Vediya Khushi R."<<endl;
+
+t1.getdata();
+t1.displaydata();
+
+return 0;
+
+}
