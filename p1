@@ -1,0 +1,45 @@
+/*Write a C++ program that create a class – ‘Employee’ that has data
+members emp_id & emp_name and member function are getdata()
+[to input data] & putdata() [to output data]. Write a main function to
+create emp, an array of Empoyee objects. Accept and display the
+details of at least 10 employees.*/
+
+#include<iostream>
+using namespace std;
+
+class employee
+{
+	private:
+		string emp_name;
+		int emp_id;
+	
+	public:
+	  void	getdata()
+	  {
+	  	cout<<"Enter the Id :: ";
+    		cin>>emp_id;
+    		cin.ignore();
+    	cout<<"Enter the Name :: ";
+    		getline(cin,emp_name);
+	  }
+	  void putdata();
+
+};
+
+void employee ::putdata()
+{
+    cout << "ID::"<<emp_id<<endl;
+    cout <<"Name::"<<emp_name;
+}
+int main()
+{
+    employee e1;
+    
+    cout<<"Vediya Khushi R."<<endl;
+    cout<<"220130318010 "<<endl;
+    
+    e1.getdata();
+    e1.putdata();
+
+    return 0;
+}
